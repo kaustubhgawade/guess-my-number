@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Guess My Number is a fun and interactive number guessing game! Test your skills by guessing the randomly generated number between 1 and 20. Play now and set a new high score!"
+    />
+    <meta
+      name="keywords"
+      content="Guess My Number, Number Guessing Game, Fun Games, Interactive Game, JavaScript Game"
+    />
+    <meta name="author" content="Kaustubh Gawade" />
+
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Game Navigation">
+        <p class="between">(Between 1 and 20)</p>
+        <div class="header-btn-wrapper">
+          <button class="btn" id="play-again" title="Shortcut: Ctrl + A to restart the game">
+            Play Again!
+          </button>
+          <button class="btn" id="reset" title="Shortcut: Ctrl + Q to reset the game">Reset</button>
+        </div>
+      </nav>
+      <h1>Guess My Number!</h1>
+      <div class="number" role="status" aria-live="polite" aria-label="Displayed number" >?</div>
+    </header>
+    <main>
+      <section class="left">
+        <label for="guessValue"></label>
+        <input
+          type="number"
+          class="guess"
+          id="guessValue"
+          min="1"
+          max="20"
+          name="guessValue"
+          aria-label="Enter a guess number"
+        />
+
+        <button class="btn" id="check" title="Shortcut: Enter to Check the Guess">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <footer><div id="rights">Made by <a href="https://kaustubhgawade.github.io/" target="_blank" >@KaustubhGawade</a></div></footer>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
