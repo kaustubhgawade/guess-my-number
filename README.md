@@ -21,7 +21,7 @@ Welcome to the **Guess My Number** game! This is a simple interactive game where
 
 ## 🌐 Live Preview
 
-You can see a live preview of the project [here](https://guess-game-2024.netlify.app/).
+You can see a live preview of the project [here](https://mysterynumber.netlify.app/).
 ## 💻 Installation
 
 To run this game locally on your machine, follow these steps:
